@@ -15,53 +15,96 @@
     <title>My CV</title>
 </head>
 <body>
-    <div class="container">
-        <header class = "d-flex justify-content-between align-items-center my-5 text-white position-abosolute fixed-top container">
-            <div class ="header__logo">
-                <h1>DAT VU</h1>
-            </div>
-            <div class="header__menu ">
-                <ul class = "d-flex justify-content-between m-0">
-                    <li class="menu__items">
-                        <a href="#" class="menu__items-link">Giới thiệu</a>
-                    </li>
-                    <li class="menu__items">
-                        <a href="#" class="menu__items-link">Về tôi</a>
-                    </li>
-                    <li class="menu__items">
-                        <a href="#" class="menu__items-link">Dự án</a>
-                    </li>
-                    <li class="menu__items">
-                        <a href="#" class="menu__items-link">Liên hệ</a>
-                    </li>
-                    <li class="button"></li>
-                </ul>
+        <header class = " text-white fixed-top container-fuild">
+            <div class=" row justify-content-between align-items-center  my-5 h-100">
+                <div class="col-1"></div>
+                <div class ="header__logo col-5" >
+                    <h1>Datvudinhtrong</h1>
+                </div>
+                <div class="header__menu col-5 h-100">
+                    <ul class = "d-flex justify-content-between m-0 h-100">
+                        <li class="menu__items">
+                            <a href="#" class="menu__items-link">Giới thiệu</a>
+                        </li>
+                        <li class="menu__items">
+                            <a href="#project" class="menu__items-link">Dự án</a>
+                        </li>
+                        <li class="menu__items">
+                            <a href="#about" class="menu__items-link">Về tôi</a>
+                        </li>
+                        <li class="menu__items">
+                            <a href="#" class="menu__items-link">Liên hệ</a>
+                        </li>
+                        <li class="button"></li>
+                    </ul>
+                </div>
+                <div class="col-1 h-100"></div>
             </div>
         </header>
-        <main>
-            <div class="introduce row h-100 ">
-                <div class="introduce__content col-6 text-white h-100">
-                    <div style="height: 25vh;"></div>
-                    <div class="introduce__content-maintext">
-                        <h1><b>Xin chào!</b></h1>
-                        <h1>tôi là <span class="introduce-myname"><b>Vũ Trọng Đạt</b></span></h1>
-                        <h1><span id = "auto-type"></span></h1>
+        <main >
+            <div style="height: 15rem;"></div>
+            <div class="introduce row d-flex flex-row">
+                <div class="col-1 h-100"></div>
+                <div class="introduce__content col-5 text-white h-100">
+                    <div class="introduce__content-maintext ">
+                        <h1 class=" maintext-hello"><b>Xin chào!</b></h1>
+                        <h1 class=" maintext-name">tôi là <span class="introduce-myname"><b>Vũ Trọng Đạt</b></span></h1>
                     </div>
-                    <div class = "introduce__btn">
-                        <button class="py-2 px-3 rounded"><a href="https://www.topcv.vn/xem-cv/ BwoLCVcDUAgGBQJQBAJUVFFXVQkLUwNeVVZXAgec01" class="text-dark introduce__btn-CV   text-decoration-none"><i class="fa-solid fa-envelope"></i><span> Xem cv của tôi</span></a></button>
+                    <div class="introduce__content-text my-3" id="auto_type">
+                    </div>
+                    <button class="introduce__btn py-3 px-5 ">
+                        <a href="https://www.topcv.vn/xem-cv/BwoLCVcDUAgGBQJQBAJUVFFXVQkLUwNeVVZXAgec01" class="introduce__btn-link text-decoration-none fw-bold ">
+                            <i class="fa-regular fa-envelope"></i>
+                            Xem cv của tôi
+                        </a>
+                    </button>
+                </div>
+                <div class="col-5  introduce__img h-100">
+                    <img src="/assets/img/introduce.png" alt="" class="introduce__img-main w-100 ">
+                </div>
+                <div class="col-1 h-100"></div>
+            </div>
+            <!-- Project -->
+            <div class=" w-100" id="project">
+                <div class="project__content w-100 h-100">
+                    <div style="height: 10rem;"></div>
+                    <div class="row">
+                        <div class="col-1"></div>
+                        <div class="project__content-title col-10">
+                            <h1 class="fs-5">Dự án của tôi</h1>
+                            <div class=" d-flex align-items-center justify-content-between " id="project__content-cards" >
+                            </div>
                         </div>
                     </div>
-                <div class="col-5 " >
-                    <img src="/assets/img/introduce.png" alt="" >
-                </div>
+                </div> 
             </div>
-            <!-- <div class="about " style="height: 100vh;">
+            <!-- About -->
+            <div class=" row" id = "about">
+                <div class="col-1" style="background-color: #9FB5FF;"></div>
+                <div class="about__content ">
+                    <div class="row">
+                        <div class="about__content-text w-100 col-6">
+                            <h1 class="text-white py-3"><b>Về Tôi</b></h1>
+                            <p>Chào các bạn, tôi là Đạt, hiện đang là sinh viên năm 3 K62 ở Đại học Thuỷ Lợi TLUh. Hiện tại tôi đang định hướng trở thành một web developer thực thụ. Tôi có khả năng tự học, và tìm hiểu các công nghệ mới thông qua việc đọc các document về công nghệ đó hay thông qua việc xem các Youtube channel về các công nghệ đó.
+    
+                                Hiện tại chuyên môn chính của tôi là về mảng front-end web. Tôi làm việc qua nhiều về ReactJS và tôi rất hứng thú về nó. Back-end tôi đang làm theo NodeJS dựa trên Javascript, nhưng chắc sau này tôi sẽ học thêm một ngôn ngữ và framework back-end mới như PHP, Go, Golang...
+                                
+                                Tiếng anh của tôi ở mức độ giao tiếp cơ bản và đọc hiểu được tài liệu.
+                                
+                                Dưới đây là một số công nghệ mà tôi học được khi phát triển web app:
+                                </p>
+                        </div>
+                        <div class="about__content-img">
+                            <img src="" alt="">
+                        </div>
+                    </div>
+                </div>
+                <div class="col-1" style="background-color: #9FB5FF;"></div>
+
                 
-            </div> -->
+            </div>
             
         </main>
-</div>
 </body>
-<script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
 <script src = "assets/scripts/main.js"></script>
 </html>

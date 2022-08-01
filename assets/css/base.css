@@ -3,6 +3,7 @@
     --white-color: #fff;
     --black-color: #000;
     --text-color: #333;
+
 }
 
 *{
@@ -19,8 +20,16 @@ html{
     scroll-behavior: smooth;
     font-size: 62.5%;
     line-height: 1.6rem;
-    overflow: hidden;
+    overflow-x: hidden;
+    width: 100%;
+}
+headeR{
+    background-color: #A7B8FF;
 }
 body{
-    background-color: #283980 ;
+    background-color: #879EFF ;
+}
+.card{
+    width: 37.5rem;
+    border-radius: 1.5rem;
 }
